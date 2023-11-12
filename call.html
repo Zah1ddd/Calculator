@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./call.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-numbers"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="lightButton">
+        <img src="./Mode (Light).svg" alt="" class="lightSvg" />
+      </div>
+      <div class="darkButton">
+        <img
+          src="./Mode (Dark).svg"
+          alt=""
+          class="darkSvg"
+          style="display: none"
+        />
+      </div>
+
+      <div class="tables">
+        <div class="screen">
+          <div class="line">
+            <input class="number" placeholder="88888888" />
+          </div>
+        </div>
+
+        <div class="table">
+          <button id="operate" class="num numberButton">AC</button>
+          <button id="operate" class="num numberButton">C</button>
+          <button id="operate" class="num numberButton">%</button>
+          <button id="operate" class="num operationButton">/</button>
+        </div>
+        <div class="table">
+          <button id="numbers" class="num numberButton">7</button>
+          <button id="numbers" class="num numberButton">8</button>
+          <button id="numbers" class="num numberButton">9</button>
+          <button id="operate" class="num operationButton">*</button>
+        </div>
+        <div class="table">
+          <button id="numbers" class="num numberButton">4</button>
+          <button id="numbers" class="num numberButton">5</button>
+          <button id="numbers" class="num numberButton">6</button>
+          <button id="operate" class="num operationButton">-</button>
+        </div>
+        <div class="table">
+          <button id="number" class="num numberButton">1</button>
+          <button id="number" class="num numberButton">2</button>
+          <button id="number" class="num numberButton">3</button>
+          <button id="operate" class="num operationButton">+</button>
+        </div>
+        <div class="table">
+          <button id="number" class="num zero">0</button>
+          <button id="point" class="num numberButton">.</button>
+          <button id="result" class="num equal">=</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./call.js"></script>
+  </body>
+</html>
